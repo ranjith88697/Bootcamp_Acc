@@ -1,0 +1,25 @@
+mode: local 
+
+llm:
+  provider: ollama
+  model: qwen3:4b         
+  temperature: 0.1
+  max_tokens: 512
+  base_url: http://localhost:11434/v1
+
+embeddings:
+  provider: ollama
+  model: nomic-embed-text
+  base_url: http://localhost:11434/v1
+
+vector_store:
+  type: chroma
+  persist_directory: ./data/chroma_db
+
+ingestion:
+  pdf_dir: ./data/pdfs
+  chunk_size: 800
+  chunk_overlap: 150
+
+retrieval:
+  top_k: 5
