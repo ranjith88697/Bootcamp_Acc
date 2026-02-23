@@ -1,0 +1,165 @@
+[
+  {
+    "id": "q01",
+    "question": "What is the purpose of NovaTech's Information Security Policy?",
+    "expected_answer": "The policy exists to safeguard the confidentiality, integrity, and availability of all data entrusted to NovaTech by customers, partners, employees, and other stakeholders.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q02",
+    "question": "How many remote work days per week are allowed under the updated 2026 policy?",
+    "expected_answer": "Employees may work remotely up to 4 days per week, with Tuesday as the mandatory in-office day.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q03",
+    "question": "What is the Quarterly Revenue reported for Q1 2026?",
+    "expected_answer": "EUR 4.8 million.",
+    "source_document": "quarterly_report_q1_2026.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q04",
+    "question": "What encryption standard is required for Confidential data at rest?",
+    "expected_answer": "AES-256 encryption is required for Confidential data at rest.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+  {
+    "id": "q05",
+    "question": "What is the minimum number of users required for the Professional tier of ProjectHub?",
+    "expected_answer": "10 users.",
+    "source_document": "product_guide.pdf",
+    "difficulty": "easy",
+    "type": "factual"
+  },
+
+  {
+    "id": "q06",
+    "question": "Compare the data refresh intervals for ProjectHub’s native connector across Starter, Professional, and Enterprise tiers.",
+    "expected_answer": "Starter refreshes every 60 minutes, Professional every 15 minutes, and Enterprise in real-time (under 30 seconds).",
+    "source_document": "product_guide.pdf",
+    "difficulty": "medium",
+    "type": "comparison"
+  },
+  {
+    "id": "q07",
+    "question": "What were the main factors contributing to NovaTech’s Q1 2026 revenue outperformance?",
+    "expected_answer": "The launch of ProjectHub v3.2, strong Enterprise upsells, improved NRR to 112%, and successful Lisbon office expansion contributed to revenue outperformance.",
+    "source_document": "quarterly_report_q1_2026.pdf",
+    "difficulty": "medium",
+    "type": "synthesis"
+  },
+  {
+    "id": "q08",
+    "question": "Summarize the responsibilities of the Incident Response Team during a P1 incident.",
+    "expected_answer": "The IRT must acknowledge within 15 minutes, assemble within 30 minutes, notify executives within 1 hour, and engage external forensics within 2 hours if needed.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "medium",
+    "type": "synthesis"
+  },
+  {
+    "id": "q09",
+    "question": "What hiring challenges were noted for AI/ML specialist roles in early 2026?",
+    "expected_answer": "Candidates were receiving multiple competing offers, making hiring difficult; HR recommended increasing compensation bands by 10–15%.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "medium",
+    "type": "synthesis"
+  },
+  {
+    "id": "q10",
+    "question": "How does the Shared Analytics Dashboard differ between ProjectHub and Insight?",
+    "expected_answer": "ProjectHub offers 8 fixed widgets with limited customization, while Insight provides 30+ visualization types, custom widgets, multi-source data, embedding, and advanced sharing.",
+    "source_document": "product_guide.pdf",
+    "difficulty": "medium",
+    "type": "comparison"
+  },
+
+  {
+    "id": "q11",
+    "question": "Why did NovaTech leadership approve the Lisbon office expansion despite timezone concerns?",
+    "expected_answer": "The expansion offered lower salary costs, strong local talent, and strategic growth benefits; timezone issues were mitigated by agreeing on core collaboration hours.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q12",
+    "question": "What risks did NovaTech identify regarding Planwise’s new AI features, and how do they plan to respond?",
+    "expected_answer": "Planwise’s AI features increased competitive pressure; NovaTech plans to accelerate ProjectHub v3.3, enhance sales battle cards, and commission a comparison report.",
+    "source_document": "quarterly_report_q1_2026.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q13",
+    "question": "How does NovaTech justify extending password rotation from 90 to 180 days?",
+    "expected_answer": "They cited NIST guidance, full MFA adoption, reduced IT support burden, and the tendency for frequent rotation to weaken password quality.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q14",
+    "question": "What strategic advantages does NovaTech expect from the Copilot AI initiative?",
+    "expected_answer": "It differentiates NovaTech with on-prem AI capabilities, supports regulated industries, enhances project insights, and is projected to drive EUR 3–4M ARR post-launch.",
+    "source_document": "meeting_notes.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+  {
+    "id": "q15",
+    "question": "How do NovaTech’s data retention rules balance operational needs with regulatory compliance?",
+    "expected_answer": "They define retention periods for customer data, logs, backups, and employee data, ensuring compliance with legal requirements while minimizing unnecessary data storage.",
+    "source_document": "security_policy.pdf",
+    "difficulty": "hard",
+    "type": "reasoning"
+  },
+
+  {
+    "id": "q16",
+    "question": "What is NovaTech’s policy on employee relocation assistance?",
+    "expected_answer": "The documents do not contain any information about relocation assistance.",
+    "source_document": null,
+    "difficulty": "unanswerable",
+    "type": "unanswerable"
+  },
+  {
+    "id": "q17",
+    "question": "Does NovaTech provide paid sabbaticals for employees?",
+    "expected_answer": "The documents do not mention any sabbatical program.",
+    "source_document": null,
+    "difficulty": "unanswerable",
+    "type": "unanswerable"
+  },
+  {
+    "id": "q18",
+    "question": "What is the official NovaTech policy on AI model transparency for customers?",
+    "expected_answer": "No document describes a formal AI transparency policy.",
+    "source_document": null,
+    "difficulty": "unanswerable",
+    "type": "unanswerable"
+  },
+  {
+    "id": "q19",
+    "question": "What is the maximum number of PTO days allowed for employees?",
+    "expected_answer": "The documents provided do not include PTO policies.",
+    "source_document": null,
+    "difficulty": "unanswerable",
+    "type": "unanswerable"
+  },
+  {
+    "id": "q20",
+    "question": "Does NovaTech offer a company-wide stock purchase plan?",
+    "expected_answer": "No document mentions a stock purchase plan.",
+    "source_document": null,
+    "difficulty": "unanswerable",
+    "type": "unanswerable"
+  }
+]
