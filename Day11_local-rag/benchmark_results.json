@@ -1,0 +1,162 @@
+[
+  {
+    "model": "qwen3:4b",
+    "prompt": "What causes tides on Earth? Answer in 2\u20133 sentences.",
+    "response": "Tides on Earth are primarily caused by the gravitational pull of the Moon on Earth's oceans. This pull creates two tidal bulges: one on the side of Earth closest to the Moon and another on the opposite side. While the Sun also exerts a gravitational force that contributes to tides, the Moon's influence is stronger due to its proximity to Earth.",
+    "time_seconds": 71.49,
+    "prompt_tokens": 25,
+    "completion_tokens": 376,
+    "tokens_per_second": 5.26,
+    "category": "factual"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "A train travels 120 km in 1.5 hours and then 80 km in 1 hour. What is its average speed for the entire trip?",
+    "response": "To determine the **average speed** for the entire trip, we use the standard formula:\n\n$$\n\\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\n$$\n\n---\n\n### Step 1: Calculate Total Distance\n\nThe train travels:\n- 120 km in the first part\n- 80 km in the second part\n\n$$\n\\text{Total Distance} = 120\\, \\text{km} + 80\\, \\text{km} = 200\\, \\text{km}\n$$\n\n---\n\n### Step 2: Calculate Total Time\n\nThe train takes:\n- 1.5 hours for the first part\n- 1 hour for the second part\n\n$$\n\\text{Total Time} = 1.5\\, \\text{hours} + 1\\, \\text{hour} = 2.5\\, \\text{hours}\n$$\n\n---\n\n### Step 3: Compute Average Speed\n\n$$\n\\text{Average Speed} = \\frac{200\\, \\text{km}}{2.5\\, \\text{hours}} = 80\\, \\text{km/h}\n$$\n\n---\n\n### Final Answer:\n\n$$\n\\boxed{80}\\, \\text{km/h}\n$$\n\nThis result makes sense because both segments of the journey were completed at a constant speed of **80 km/h**, so the average speed over the entire trip is also **80 km/h**.",
+    "time_seconds": 234.92,
+    "prompt_tokens": 45,
+    "completion_tokens": 942,
+    "tokens_per_second": 4.01,
+    "category": "reasoning"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "Summarize the following paragraph in 2 sentences:\n\nArtificial intelligence is transforming industries by enabling automation, enhancing decision\u2011making, and unlocking new capabilities. Companies across healthcare, finance, and manufacturing are adopting AI to improve efficiency and deliver better outcomes.",
+    "response": "AI is transforming industries through automation, enhanced decision-making, and new capabilities. Companies in healthcare, finance, and manufacturing are adopting AI to improve efficiency and achieve better outcomes.",
+    "time_seconds": 105.14,
+    "prompt_tokens": 60,
+    "completion_tokens": 412,
+    "tokens_per_second": 3.92,
+    "category": "summarization"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "List 3 European capitals. Respond ONLY with valid JSON in this format: [{\"city\": \"...\", \"country\": \"...\"}]",
+    "response": "[{\"city\":\"Paris\",\"country\":\"France\"},{\"city\":\"Berlin\",\"country\":\"Germany\"},{\"city\":\"Rome\",\"country\":\"Italy\"}]",
+    "time_seconds": 571.95,
+    "prompt_tokens": 38,
+    "completion_tokens": 2196,
+    "tokens_per_second": 3.84,
+    "category": "structured"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "Write a Python function that checks if a number is prime.",
+    "response": "To solve this problem, we need to create a Python function that checks if a given number is prime. A prime number is defined as a natural number greater than 1 that has no positive divisors other than 1 and itself. \n\n### Approach\n1. **Check for Edge Cases**: Numbers less than 2 are not prime (since 1 and negative numbers are not prime).\n2. **Check for Divisibility**: For numbers greater than or equal to 2, we check if the number is divisible by any integer from 2 up to the square root of the number. If it is divisible by any such integer, the number is not prime.\n3. **Optimization**: Instead of checking all numbers up to the number itself, we only check up to the square root of the number. This is because if a number \\( n \\) is not prime, it must have a divisor less than or equal to \\( \\sqrt{n} \\).\n\n### Solution Code\n```python\ndef is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True\n```\n\n### Explanation\n1. **Edge Case Handling**: The function first checks if the number \\( n \\) is less than 2. If true, it immediately returns `False` since numbers less than 2 are not prime.\n2. **Divisibility Check**: The loop starts from 2 and goes up to the integer value of the square root of \\( n \\) (inclusive). For each number \\( i \\) in this range, the function checks if \\( n \\) is divisible by \\( i \\). If \\( n \\) is divisible by any \\( i \\), the function returns `False`.\n3. **Prime Confirmation**: If the loop completes without finding any divisors, the function returns `True`, confirming that \\( n \\) is a prime number.\n\nThis approach efficiently checks for primality by leveraging mathematical insights to minimize unnecessary computations, ensuring optimal performance even for larger numbers.\n\n**Example Usage**:\n```python\nprint(is_prime(2))  # True\nprint(is_prime(3))  # True\nprint(is_prime(4))  # False\nprint(is_prime(1))  # False\n```",
+    "time_seconds": 316.23,
+    "prompt_tokens": 22,
+    "completion_tokens": 1389,
+    "tokens_per_second": 4.39,
+    "category": "code"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "Provide a 3\u2011step plan for improving team communication. Each step must be exactly one sentence.",
+    "response": "1. Establish clear communication protocols that specify response timelines and preferred channels for all team interactions.  \n2. Encourage active listening and specific, actionable feedback during every team discussion to enhance understanding.  \n3. Implement regular, brief check-ins to promptly identify and resolve emerging communication gaps before they escalate.",
+    "time_seconds": 244.83,
+    "prompt_tokens": 30,
+    "completion_tokens": 1139,
+    "tokens_per_second": 4.65,
+    "category": "instruction"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "What causes tides on Earth? Answer in 2\u20133 sentences.",
+    "response": "Tides on Earth are primarily caused by the gravitational pull of the Moon on Earth's oceans, creating a bulge of water on the side of Earth facing the Moon and another bulge on the opposite side due to centrifugal force in the Earth-Moon system. The gravitational influence of the Sun also contributes, especially during new and full moons when its pull aligns with the Moon's, resulting in higher high tides and lower low tides (spring tides).",
+    "time_seconds": 86.92,
+    "prompt_tokens": 25,
+    "completion_tokens": 462,
+    "tokens_per_second": 5.32,
+    "category": "factual"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "A train travels 120 km in 1.5 hours and then 80 km in 1 hour. What is its average speed for the entire trip?",
+    "response": "To determine the **average speed** for the entire trip, we use the standard formula:\n\n$$\n\\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\n$$\n\n---\n\n### Step 1: Calculate Total Distance\n\nThe train travels:\n- 120 km in the first part\n- 80 km in the second part\n\n$$\n\\text{Total Distance} = 120 \\, \\text{km} + 80 \\, \\text{km} = 200 \\, \\text{km}\n$$\n\n---\n\n### Step 2: Calculate Total Time\n\nThe train takes:\n- 1.5 hours for the first part\n- 1 hour for the second part\n\n$$\n\\text{Total Time} = 1.5 \\, \\text{hours} + 1 \\, \\text{hour} = 2.5 \\, \\text{hours}\n$$\n\n---\n\n### Step 3: Compute Average Speed\n\nNow plug the values into the average speed formula:\n\n$$\n\\text{Average Speed} = \\frac{200 \\, \\text{km}}{2.5 \\, \\text{hours}} = 80 \\, \\text{km/h}\n$$\n\n---\n\n### Final Answer\n\n$$\n\\boxed{80} \\, \\text{km/h}\n$$",
+    "time_seconds": 162.98,
+    "prompt_tokens": 45,
+    "completion_tokens": 868,
+    "tokens_per_second": 5.33,
+    "category": "reasoning"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "Summarize the following paragraph in 2 sentences:\n\nArtificial intelligence is transforming industries by enabling automation, enhancing decision\u2011making, and unlocking new capabilities. Companies across healthcare, finance, and manufacturing are adopting AI to improve efficiency and deliver better outcomes.",
+    "response": "Artificial intelligence is transforming industries by enabling automation, improving decision-making, and creating new capabilities. Companies in healthcare, finance, and manufacturing are adopting AI to boost efficiency and achieve better outcomes.",
+    "time_seconds": 83.75,
+    "prompt_tokens": 60,
+    "completion_tokens": 445,
+    "tokens_per_second": 5.31,
+    "category": "summarization"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "List 3 European capitals. Respond ONLY with valid JSON in this format: [{\"city\": \"...\", \"country\": \"...\"}]",
+    "response": "[{\"city\":\"Paris\",\"country\":\"France\"},{\"city\":\"Berlin\",\"country\":\"Germany\"},{\"city\":\"Madrid\",\"country\":\"Spain\"}]",
+    "time_seconds": 132.44,
+    "prompt_tokens": 38,
+    "completion_tokens": 643,
+    "tokens_per_second": 4.86,
+    "category": "structured"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "Write a Python function that checks if a number is prime.",
+    "response": "To check if a number is prime, we need to determine if it has any divisors other than 1 and itself. The function will efficiently handle this by:\n1. Returning `False` for numbers less than 2 (since 0 and 1 are not prime).\n2. Checking divisibility from 2 up to the square root of the number (inclusive). This is sufficient because any factor larger than the square root would have a corresponding factor smaller than the square root.\n3. Returning `True` only if no divisors are found in the checked range.\n\nHere's the implementation:\n\n```python\ndef is_prime(n):\n    if n < .5:\n        return False\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    # Check odd factors up to the square root\n    i = 3\n    while i * i <= n:\n        if n % i == 0:\n            return False\n        i += 2\n    return True\n```\n\n**Note on the implementation:**\n- The initial check `n < .5` is a bit unconventional (since `n` is an integer) but ensures the function works for negative numbers (though primes are defined as positive integers greater than 1).\n- The function skips even numbers after checking for 2 (using `n % 2 == 0`), which optimizes the loop significantly for large numbers.\n- The loop runs from 3 to `sqrt(n)` in steps of 2 (only checking odd divisors).\n\n**Example usage:**\n```python\nprint(is_prime(7))  # True\nprint(is_prime(15)) # False\nprint(is_prime(2))  # True\nprint(is_prime(1))  # False\nprint(is_prime(0))  # False\n```\n\n**Why this works:**\n- For `n = 7`: The loop checks `i=3` (3*3=9 > 7, so loop exits early) \u2192 returns `True`.\n- For `n = 15`: `i=3` \u2192 15 % 3 == 0 \u2192 returns `False`.\n- The solution efficiently handles edge cases and large numbers without excessive computations.\n\nThis implementation is optimized for speed while remaining clear and correct for all positive integers greater than 1.",
+    "time_seconds": 1316.36,
+    "prompt_tokens": 22,
+    "completion_tokens": 609,
+    "tokens_per_second": 0.46,
+    "category": "code"
+  },
+  {
+    "model": "qwen3:4b",
+    "prompt": "Provide a 3\u2011step plan for improving team communication. Each step must be exactly one sentence.",
+    "response": "Define and document clear communication channels, response timeframes, and escalation procedures for all team members.  \nImplement active listening practices by requiring participants to paraphrase and ask clarifying questions during discussions.  \nSchedule regular, brief check-ins to proactively identify and resolve communication barriers before they escalate.",
+    "time_seconds": 1193.22,
+    "prompt_tokens": 30,
+    "completion_tokens": 2358,
+    "tokens_per_second": 1.98,
+    "category": "instruction"
+  },
+  {
+    "model": "qwen3:8b",
+    "prompt": "What causes tides on Earth? Answer in 2\u20133 sentences.",
+    "response": "Tides on Earth are primarily caused by the gravitational pull of the moon and, to a lesser extent, the sun. The moon's gravity creates bulges in the Earth's oceans on the side facing it and the opposite side, while the sun's gravitational influence adds to this effect, resulting in higher (spring tides) or lower (neap tides) depending on the alignment of the sun, moon, and Earth.",
+    "time_seconds": 181.79,
+    "prompt_tokens": 25,
+    "completion_tokens": 465,
+    "tokens_per_second": 2.56,
+    "category": "factual"
+  },
+  {
+    "model": "qwen3:8b",
+    "prompt": "A train travels 120 km in 1.5 hours and then 80 km in 1 hour. What is its average speed for the entire trip?",
+    "response": "To determine the **average speed** of the train for the entire trip, we use the formula for average speed:\n\n$$\n\\text{Average Speed} = \\frac{\\text{Total Distance}}{\\text{Total Time}}\n$$\n\n---\n\n### Step 1: Calculate Total Distance\n\nThe train travels:\n\n- 120 km in the first part,\n- 80 km in the second part.\n\nAdding these together:\n\n$$\n\\text{Total Distance} = 120 \\, \\text{km} + 80 \\, \\text{km} = 200 \\, \\text{km}\n$$\n\n---\n\n### Step 2: Calculate Total Time\n\nThe train takes:\n\n- 1.5 hours for the first part,\n- 1 hour for the second part.\n\nAdding these together:\n\n$$\n\\text{Total Time} = 1.5 \\, \\text{hours} + 1 \\, \\text{hour} = 2.5 \\, \\text{hours}\n$$\n\n---\n\n### Step 3: Compute Average Speed\n\nNow substitute into the average speed formula:\n\n$$\n\\text{Average Speed} = \\frac{200 \\, \\text{km}}{2.5 \\, \\text{hours}} = 80 \\, \\text{km/h}\n$$\n\n---\n\n### Verification (Optional)\n\nTo ensure accuracy, we can verify by considering the individual speeds:\n\n- First part: $ \\frac{120 \\, \\text{km}}{1.5 \\, \\text{hours}} = 80 \\, \\text{km/h} $\n- Second part: $ \\frac{80 \\, \\text{km}}{1 \\, \\text{hour}} = 80 \\, \\text{km/h} $\n\nSince the speed is constant throughout the journey, the average speed is also 80 km/h.\n\n---\n\n### Final Answer\n\n$$\n\\boxed{80}\n$$",
+    "time_seconds": 1159.23,
+    "prompt_tokens": 45,
+    "completion_tokens": 1588,
+    "tokens_per_second": 1.37,
+    "category": "reasoning"
+  },
+  {
+    "model": "qwen3:8b",
+    "prompt": "Summarize the following paragraph in 2 sentences:\n\nArtificial intelligence is transforming industries by enabling automation, enhancing decision\u2011making, and unlocking new capabilities. Companies across healthcare, finance, and manufacturing are adopting AI to improve efficiency and deliver better outcomes.",
+    "response": "Artificial intelligence is revolutionizing industries by enabling automation, enhancing decision-making, and unlocking new capabilities. Across healthcare, finance, and manufacturing, companies are adopting AI to boost efficiency and achieve better outcomes.",
+    "time_seconds": 79.56,
+    "prompt_tokens": 60,
+    "completion_tokens": 229,
+    "tokens_per_second": 2.88,
+    "category": "summarization"
+  },
+  {
+    "model": "qwen3:8b",
+    "prompt": "List 3 European capitals. Respond ONLY with valid JSON in this format: [{\"city\": \"...\", \"country\": \"...\"}]",
+    "response": "[{\"city\": \"Paris\", \"country\": \"France\"}, {\"city\": \"Berlin\", \"country\": \"Germany\"}, {\"city\": \"Rome\", \"country\": \"Italy\"}]",
+    "time_seconds": 94.6,
+    "prompt_tokens": 38,
+    "completion_tokens": 259,
+    "tokens_per_second": 2.74,
+    "category": "structured"
+  }
+]
