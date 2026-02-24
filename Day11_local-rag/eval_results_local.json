@@ -1,0 +1,335 @@
+[
+  {
+    "input": "What encryption standard is required for Confidential data at rest?",
+    "actual_output": "The document specifies that \"All Confidential and Restricted data stored at rest must be encrypted using AES-256 or an equivalent algorithm approved by the Security Team.\" This information appears in security_policy.pdf p.8.\n\nTherefore, the encryption standard required for Confidential data at rest is AES-256 (or an equivalent algorithm approved by the Security Team).",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the response directly addresses the question about the encryption standard for confidential data at rest without including any irrelevant information.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.09523809523809523,
+        "reason": "The score is 0.10 because although the retrieval context includes relevant statements like 'All Confidential and Restricted data stored at rest must be encrypted using AES-256 or an equivalent algorithm approved by the Security Team' and 'Company-issued devices must have full-disk encryption enabled (BitLocker for Windows, FileVault for macOS)', the majority of the context is irrelevant, focusing on key management, data transmission, and unrelated policies, as indicated by reasons such as 'The statement refers to data transmitted across networks, not data at rest' and 'The statement about logging data subject requests in the DSR Tracking System is unrelated to encryption standards for Confidential data at rest.'",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the sentence in the expected output is fully supported by the first node in the retrieval context, which explicitly states the requirement for AES-256 encryption for Confidential data at rest. This direct alignment ensures complete contextual recall.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the first node in retrieval contexts clearly specifies the required encryption standard for Confidential data at rest, stating 'All Confidential and Restricted data stored at rest must be encrypted using AES-256 or an equivalent algorithm approved by the Security Team,' which directly answers the input. The subsequent nodes, ranked lower, discuss unrelated topics such as network transmission encryption, data protection assessments, general policy information, and device encryption, which justifies their lower ranking and maintains perfect contextual precision.",
+        "success": true
+      }
+    ]
+  },
+  {
+    "input": "What is the purpose of NovaTech's Information Security Policy?",
+    "actual_output": "The document does not contain the answer.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 0.0,
+        "reason": "The score is 0.00 because the output states that the document does not contain the answer, which fails to address the question about the purpose of NovaTech's Information Security Policy at all.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.21428571428571427,
+        "reason": "The score is 0.21 because most retrieval context statements, such as those about the Shared Analytics Dashboard and HubSpot implementation, are unrelated to NovaTech's Information Security Policy, as noted in the reasons for irrelevancy. However, the relevant statements under '11. Security and Compliance' provide some insight into policy aspects like retaliation prohibition and conflict of interest disclosures, which partially address the input question.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 0.0,
+        "reason": "The score is 0.00 because none of the node(s) in retrieval context mention a policy about safeguarding the confidentiality, integrity, and availability of data entrusted to NovaTech by customers, partners, employees, and other stakeholders, which is the main point of the expected output sentence.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.0,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input question. For example, the first node discusses the Shared Analytics Dashboard, which is unrelated to the Information Security Policy's purpose, and it is ranked first, indicating irrelevant content is prioritized. Similarly, subsequent nodes cover topics like implementation planning, company overview, engineering documentation, and retaliation policies, none of which address the purpose of NovaTech's Information Security Policy. This misranking of irrelevant nodes above any relevant information results in the lowest possible contextual precision score.",
+        "success": false
+      }
+    ]
+  },
+  {
+    "input": "How many remote work days per week are allowed under the updated 2026 policy?",
+    "actual_output": "The document states: \"Decision: Remote work policy updated to allow up to 4 days remote per week, effective Q3 2026. Tuesday remains the mandatory in-office day company-wide.\"\n\nThis information appears in the meeting notes from page 7 of the document. The context also confirms that the policy change was recommended by Aisha to expand remote work from 3 days to 4 days per week with only Tuesday as the mandatory in-office day, and this change would take effect Q3 2026.\n\nTherefore, under the updated 2026 policy, 4 remote work days per week are allowed.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 0.7142857142857143,
+        "reason": "The score is 0.71 because the response provides some relevant information but includes references to the source rather than directly answering the question about the number of remote work days allowed, which limits its relevance.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.23333333333333334,
+        "reason": "The score is 0.23 because most reasons for irrelevancy highlight that the context lacks specific details on the number of remote work days allowed, while the relevant statements clearly state, 'Remote work policy updated to allow up to 4 days remote per week' and 'Tuesday remains the mandatory in-office day,' indicating some relevant information but limited overall coverage.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the expected output perfectly matches the information in node 1 of the retrieval context, which clearly states the remote work policy allowing up to 4 days remote per week with Tuesday as the mandatory in-office day. There are no discrepancies or missing details.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.9166666666666666,
+        "reason": "The score is 0.92 because the first, second, and fourth nodes in retrieval contexts clearly support the updated 2026 remote work policy, being ranked highly. However, the third node, which is irrelevant as it does not clearly state the number of remote work days or mandatory in-office day, appears before some relevant nodes, preventing a perfect score.",
+        "success": true
+      }
+    ]
+  },
+  {
+    "input": "What is the minimum number of users required for the Professional tier of ProjectHub?",
+    "actual_output": "The minimum number of users required for the Professional tier of ProjectHub is 10.\n\nThis information is found in [Source: product_guide.pdf p.10] where it states: \"Professional \u20ac79/user/month \u20ac66/user/month 10\" in the Per-Product Pricing section. The table shows that the Professional tier has a minimum of 10 users.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the response fully addresses the question without any irrelevant information, providing a clear and concise answer about the minimum number of users required for the Professional tier of ProjectHub. There are no extraneous details that would lower the relevancy.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.07692307692307693,
+        "reason": "The score is 0.08 because although most statements do not address the minimum user requirement for the Professional tier, the relevant statement 'Professional \u20ac79/user/month \u20ac66/user/month 10' directly provides the minimum number of users as 10, indicating some relevance amidst largely irrelevant context.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 0.0,
+        "reason": "The score is 0.00 because the expected output mentions '10 users,' but the node(s) in retrieval context do not provide any information about this specific user count, resulting in no support for the statement.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.3333333333333333,
+        "reason": "The score is 0.33 because the relevant node is ranked third in the retrieval contexts, while the first and second nodes are irrelevant. The first node's reason states it does not mention user minimums or the Professional tier, and the second node discusses pricing changes unrelated to the Professional tier's user requirements. These irrelevant nodes appearing before the relevant node lower the score, but the presence of the relevant node within the top five contexts maintains the score above zero.",
+        "success": false
+      }
+    ]
+  },
+  {
+    "input": "What is the Quarterly Revenue reported for Q1 2026?",
+    "actual_output": "EUR 4.8 million\n\nThe context states on page 1 of the quarterly report: \"Quarterly recognized revenue came in at EUR 4.8 million, exceeding our internal forecast of EUR 4.6 million by approximately 4%.\" This directly answers the question about the quarterly revenue reported for Q1 2026.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 0.5,
+        "reason": "The score is 0.50 because the response discusses internal forecasts and comparisons rather than providing the actual reported revenue for Q1 2026, which is what was asked. However, it is somewhat relevant as it relates to revenue figures, just not the specific data requested.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.14285714285714285,
+        "reason": "The score is 0.14 because although the retrieval context includes relevant statements like 'Quarterly recognized revenue came in at EUR 4.8 million' and detailed revenue shares for Q1 2026, the majority of the context is irrelevant, focusing on ARR, expenses, and unrelated projects, as indicated by reasons such as 'The statement refers to Annual Recurring Revenue (ARR), not the Quarterly Revenue for Q1 2026' and 'This statement provides expense information, not revenue.'",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the sentence in the expected output directly matches the information in node 1 of the retrieval context, which states the quarterly recognized revenue as EUR 4.8 million, with no conflicting information present.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.5,
+        "reason": "The score is 0.50 because the first node in retrieval contexts is irrelevant, as it only mentions the next report date without revenue information for Q1 2026, while the second node, which is relevant, explicitly states the quarterly revenue for Q1 2026. However, the relevant node is ranked second, not first, which lowers the score. The presence of irrelevant nodes ranked above the relevant one explains why the score is not higher.",
+        "success": false
+      }
+    ]
+  },
+  {
+    "input": "How does the Shared Analytics Dashboard differ between ProjectHub and Insight?",
+    "actual_output": "The document does not contain the answer.\n\nWhile the context states that \"Both NovaTech ProjectHub and NovaTech Insight include a Shared Analytics Dashboard module. This is a core component present in both products, but with different capabilities depending on which product you are using,\" it",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 0.75,
+        "reason": "The score is 0.75 because the response includes a statement that the document does not contain the answer, which is irrelevant to directly addressing the input question. However, the rest of the response is relevant and attempts to address the query, justifying the moderately high score.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.12903225806451613,
+        "reason": "The score is 0.13 because the majority of the retrieval context is irrelevant, as shown by reasons like 'The statement does not relate to differences in the Shared Analytics Dashboard between ProjectHub and Insight,' while only a few statements such as 'Both NovaTech ProjectHub and NovaTech Insight include a Shared Analytics Dashboard module' are relevant but lack detailed comparison.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 0.0,
+        "reason": "The score is 0.00 because none of the node(s) in retrieval context provide information about the number of fixed widgets or customization options for ProjectHub, nor do they mention the specific features of Insight such as 30+ visualization types, custom widgets, multi-source data, embedding, or advanced sharing, making it impossible to attribute any sentence in the expected output to the retrieval context.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the first node in retrieval contexts, ranked highest, directly addresses the difference between the Shared Analytics Dashboards in ProjectHub and Insight, as indicated by the reason stating it 'directly addresses the difference between the dashboards.' All subsequent nodes, ranked lower, are irrelevant since they discuss unrelated topics such as HubSpot implementation, company overview, competitive threats, and pricing, which justifies their lower ranking and results in a perfect contextual precision score.",
+        "success": true
+      }
+    ]
+  },
+  {
+    "input": "Compare the data refresh intervals for ProjectHub\u2019s native connector across Starter, Professional, and Enterprise tiers.",
+    "actual_output": "Based on the context provided in product_guide.pdf p.6, the data refresh intervals for ProjectHub's native connector across the tiers are:\n\n- Starter tier: Every 60 minutes\n- Professional tier: Every 15 minutes\n- Enterprise tier: Real-time (<30 seconds)\n\nThis information is clearly stated in the \"Data refresh intervals\" table under section 3.2 Core Features.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 0.8,
+        "reason": "The score is 0.80 because the actual output incorrectly generalizes the 15-minute refresh interval to all connectors, while the retrieval context specifies that only the native connector refreshes every 15 minutes and other database connectors refresh every 1 hour.",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the response fully addresses the comparison of data refresh intervals across all tiers without including any irrelevant information.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.2,
+        "reason": "The score is 0.20 because while the retrieval context includes relevant statements such as 'Data refresh intervals: Connector Type Starter Professional Enterprise Native (ProjectHub) Every 60 min Every 15 min Real-time (<30s)' and 'Real-time data access (sub-30-second latency) is available on the Enterprise tier for the native ProjectHub connector,' the majority of the context is irrelevant, focusing on unrelated features and connectors as noted in the reasons for irrelevancy.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the sentence in the expected output perfectly matches the information provided in node 1 of the retrieval context, with no discrepancies or missing details.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.75,
+        "reason": "The score is 0.75 because the first and fourth nodes in retrieval contexts, ranked 1st and 4th respectively, provide clear and direct information about ProjectHub's native connector refresh intervals across tiers, justifying their higher ranking. However, the presence of irrelevant nodes ranked 2nd and 3rd, which discuss unrelated topics like pricing and feature limits without mentioning refresh intervals, lowers the score from perfect precision.",
+        "success": true
+      }
+    ]
+  },
+  {
+    "input": "Does NovaTech offer a company-wide stock purchase plan?",
+    "actual_output": "The document does not contain the answer.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 0.0,
+        "reason": "The score is 0.00 because the response only states that the document lacks the answer, thus failing to address whether NovaTech offers a company-wide stock purchase plan.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.0,
+        "reason": "The score is 0.00 because none of the retrieval context statements relate to a company-wide stock purchase plan; for example, statements about 'company-wide baseline with departmental flexibility' and 'sales opportunities and clients' do not address the stock purchase plan question.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 0.0,
+        "reason": "The score is 0.00 because none of the 5 nodes in retrieval context mention a stock purchase plan; they focus on unrelated topics such as remote work policy, sales opportunities, software implementation, sales pipeline, and employee check-ins, making the expected output unsupported by the context.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.0,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant, as each node discusses topics unrelated to a stock purchase plan, such as work arrangements, sales opportunities, software implementation, sales metrics, and employee reviews. Since no relevant nodes are present, there is no opportunity for relevant nodes to be ranked higher than irrelevant ones.",
+        "success": false
+      }
+    ]
+  },
+  {
+    "input": "What is NovaTech\u2019s policy on employee relocation assistance?",
+    "actual_output": "The document does not contain the answer.",
+    "success": false,
+    "metrics": [
+      {
+        "metric_name": "Faithfulness",
+        "score": 1.0,
+        "reason": "The score is 1.00 because there are no contradictions; the actual output fully aligns with the retrieval context. Great job maintaining accuracy!",
+        "success": true
+      },
+      {
+        "metric_name": "Answer Relevancy",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the response fully addresses the question about NovaTech's policy on employee relocation assistance without including any irrelevant information.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Relevancy",
+        "score": 0.0,
+        "reason": "The score is 0.00 because none of the statements in the retrieval context address NovaTech\u2019s policy on employee relocation assistance; all reasons for irrelevancy highlight topics unrelated to relocation assistance, such as information asset policies, onboarding, remote work, and disciplinary actions.",
+        "success": false
+      },
+      {
+        "metric_name": "Contextual Recall",
+        "score": 1.0,
+        "reason": "The score is 1.00 because the expected output accurately reflects the retrieval context nodes, which do not mention relocation assistance at all, making the response fully supported and precise.",
+        "success": true
+      },
+      {
+        "metric_name": "Contextual Precision",
+        "score": 0.0,
+        "reason": "The score is 0.00 because all nodes in the retrieval contexts are irrelevant to the input, as the first node discusses information security policy scope, the second covers expense violations and onboarding, the third lists unrelated updates and project plans, the fourth is a disclaimer about the employee handbook, and the fifth addresses security policy enforcement. Since no relevant nodes are present, none are ranked higher than irrelevant ones, resulting in the lowest possible score.",
+        "success": false
+      }
+    ]
+  }
+]
